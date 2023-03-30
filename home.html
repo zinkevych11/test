@@ -6,6 +6,13 @@
     <meta name="viewport" content="width=, initial-scale=1.0">
     <title>Document</title>
     <style>
+        body,a,h1,h2
+        { 
+          margin: 0;  
+          padding: 0;
+          color: black;
+          text-decoration: none;
+        }
         .logo{
             width: 30px;
             height: 20px;
@@ -25,6 +32,37 @@
             display:flex;
             align-items: center;
             justify-content: space-between;
+            padding-left: 50px;
+            padding-right: 50px;
+            background-color: #F2F2F2;
+        }
+        .site-main{
+            background-color:#0D2960;
+            height: 850px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .title{
+            text-align: center;
+            color: white;
+            font-size: 34px;
+        }
+        .sub-title
+        {
+            text-align: center;
+            color: #C1CADF;
+            margin-top: 55px;
+            font-size: 20px;
+            width: 676px;
+
+        }
+        .btn-container{
+            display: flex;
+            align-items: center;
+            justify-content: center; 
+            margin-top: 45px;
         }
 
     </style>
@@ -40,5 +78,23 @@
             <div class="header-nav-item"> <a href="">Sign in</a></div>
         </nav>
     </header>
+    <main class="site-main">
+        <div>
+            <h1 class="title">
+                Bit Blazor Project Template
+            </h1>
+            <h2 class="sub-title">
+                Create your multi-mode (WASM, Server, Hybrid, pre-rendering) Blazor app easily in the shortest time ever!
+            </h2>
+            <div class="btn-container"> 
+                <button>
+                    GitHub Repo
+                </button>
+            </div>
+        </div>
+               
+
+
+    </main>
 </body>
 </html>
